@@ -1,0 +1,52 @@
+/* RESET*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*COLORS*/
+:root {
+    --SPAN-COLOR: rgb(21, 122, 72);
+    --H2-BG-COLOR: rgb(241, 241, 70);
+    --DIVIDER-BG-COLOR:rgb(56, 56, 56);
+}
+
+/*GENERAL RULES*/
+.container{
+    width: 100%;
+    max-width: 550px;
+    margin: 20px auto;
+    box-shadow: 2px 2px 2px 2px gray;
+}
+
+.section-one{
+    padding:30px;
+}
+
+.section-one p{
+    padding:10px 0;
+}
+
+span{
+    color:var(--SPAN-COLOR);
+}
+
+.section-two h2{
+    background-color:var(--H2-BG-COLOR);
+    width:fit-content;
+    padding:5px 9px;
+    margin-top: 7px;
+}
+
+.section-two p{
+    padding: 17px;
+    line-height: 1.5rem;
+}
+
+.divider{
+    background-color:var(--DIVIDER-BG-COLOR);
+    height: 30px;
+    max-width: 550px;
+    box-shadow:2px 2px 2px rgb(163, 155, 155) ;
+}

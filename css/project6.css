@@ -1,0 +1,600 @@
+/*RESET*/
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;}
+
+/*UTILITY VALUES*/
+:root{
+    /*COLORS*/
+    --BG-COLOR: blue;
+
+    /*FONTS*/
+    --FF: sans-serif;
+}
+
+/*GENERAL STYLES*/
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+}
+
+.header-nav-span{
+    color: blue;
+    font-size:large;
+    font-weight: 600;
+    display: flex;
+}
+
+.header-nav-span::after{
+    content:'|SCISSOR';
+    color: blue;
+}
+
+.header-nav-div{
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-nav-div a{
+    color: black;
+    margin-inline:10px; 
+    font-size: large;
+    text-decoration: none;
+}
+
+.header-nav-div a:nth-child(1){
+    color: blue;
+    text-decoration: none;
+    font-weight:600px;
+}
+
+.header-nav-div2{
+    margin-inline-end: 14px;
+}
+
+.header-nav-div2 a{
+    text-decoration: none;
+    font-size: large;
+}
+
+.header-nav-div2 a:last-child{
+    background-color: blue;
+    color: white;
+    border-radius:40px;
+    padding: 10px;
+    margin-inline-start: 10px;
+}
+
+.section-one{
+    margin: 40px;
+}
+
+.section-one h1{
+    line-height: 52px;
+    text-align: center;
+}
+
+.section-one-span{
+    color:blue;
+    font-family: Verdana;
+}
+
+.section-one p{
+    padding: 20px;
+    max-width: 80%;
+    margin:0 auto;
+    text-align:center;
+    font-size: 18px;
+}
+
+.section-one-button{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;   
+}
+
+.section-one button:first-of-type{
+    background-color: blue;
+    color:white;
+    padding:10px 35px;
+    border-radius:20px;
+    border: none;
+    font-size: 15px;
+}
+
+.section-one button:last-of-type{
+    color: blue;
+    border: none;
+    padding: 15px;
+    background: transparent;
+    font-size: 15px;
+    border: 0.2px solid blue;
+    border-radius:20px ;
+}
+
+.section-one-img{
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0 auto;
+    max-width: 700px;
+    width: 100%;
+}
+
+.section-one-img img{
+    max-width:500px;
+    height:200px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.section-one-img:nth-child(1){
+    position: absolute;
+    z-index: 1;
+}
+
+.section-one-img:nth-child(2){
+    max-width:600px;
+    position: absolute;
+    left:-15em;
+    z-index: 2;
+}
+
+.section-two{
+    margin-top: -20px;
+    position: relative;
+    z-index:1;
+}
+
+.section-two-img{
+    align-items: center;
+    max-width: 700px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.section-two-img img{
+    max-width:700px;
+    height:100px;
+    margin:2rem auto;
+}
+
+.section-two-div{
+    background-color: whitesmoke;
+    display: flex;
+    gap:5rem;
+    padding:25px;
+}
+
+.section-two-div p{
+    text-align:center;
+    font-weight: 600;
+    font-size:18px;
+}
+
+.h1-span{
+    color:blue;
+    font-size:18px;
+    font-weight:600;
+}
+
+.p-span{
+    display:flex;
+    flex-direction: column;
+    font-size: 18px;
+    font-weight: 200;
+    margin-top: 7px;
+}
+
+.section-two-div2{
+    display: grid;
+    grid-template-columns: 600px 200px 200px;
+    grid-template-rows:130px;
+    gap:5rem;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.section-two-div2 h1{
+    grid-column: 1;
+    grid-row:1/3;
+}
+
+.section-two-div2 p{
+    grid-column: auto;
+    grid-row: auto;
+}
+
+.section-two-div2 img{
+    display:block;
+    margin-left:2rem;
+    background-color:rgb(237, 238, 248) ;
+    border-radius: 100%;
+    padding: 7px;
+}
+
+.section-two-div2 span{
+    font-weight:600;
+    font-size: 22px;
+    font-family: 'Trebuchet MS';
+}
+
+.span-article{
+    font-size: 22px;
+    font-weight: 400;
+    max-width: 55%;
+    line-height:1.9;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+.section-three-header{
+    text-align: center;
+    margin-top: 20px;}
+
+.section-three-header p{
+    max-width:50%;
+    margin: 0 auto;}
+
+.section-three-header span{color: blue;}
+
+.section-three-container{
+    border-radius: 10px;
+    display:flex;
+    height: 60%;
+    justify-content: space-around;
+    width: 70%;
+    margin: 4rem auto;
+    position: relative;
+    border:0.8px solid gray;}
+
+.section-three-container div:nth-child(1){
+    padding: 20px;
+    font-size: 18px;
+    margin-inline-end: 50px;
+}
+
+.section-three-container div:nth-child(2){
+    background-image:linear-gradient(to bottom, rgb(17, 17, 41), rgb(13, 71, 71));
+    border-radius: 20px;
+    color:white;
+    font-size: 18px;
+    padding: 20px;
+    position: absolute;
+    top: -30px;
+    z-index: 1;
+    height: 420px;
+    }
+
+.section-three-container div:nth-child(3){
+    padding:20px;
+    font-size: 18px;
+    margin-inline-start:50px ;}
+
+.section-three-container p{
+    font-weight: 600;
+    margin: 20px;
+    text-align: center;}
+
+.section-three-container li{
+    list-style:none;
+    padding: 7px;}
+
+.section-three-button{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.section-three-button button:nth-child(2){
+    background-color: blue;
+    color: white;
+    padding:10px 35px;
+    border-radius: 20px;
+    border:none;
+    font-size:15px;
+}
+
+.section-three-button button:nth-child(1){
+    background-color: whitesmoke;
+    color:blue;
+    padding:10px 35px;
+    border-radius: 20px;
+    border:1px solid blue;
+    font-size:15px;
+}
+
+.section-four{
+    background-image: linear-gradient(to left, rgb(8, 42, 56), rgb(49, 159, 163), rgb(68, 109, 184));
+    padding:15px;
+}
+
+.section-four form{
+    background-color: whitesmoke;
+    color: blue;
+    display: flex;
+    flex-direction: column;
+    margin: 40px auto;
+    padding: 35px;
+    border-radius: 10px;
+    border: 0.4px solid blue;
+    max-width:fit-content;
+    }
+
+.section-four input{
+    color: blue;
+    border: 0.4px solid blue;
+    border-radius: 5px;
+    padding: 12px; 
+}
+.form-input{
+    width:110%;
+    max-width:400px;
+    margin: auto;
+    }
+
+::placeholder{
+    color: blue;}
+
+.form-items{
+        display:flex;
+        gap: 9px;
+        margin:8px auto;
+        }
+
+form > button{background-color: blue;
+color: whitesmoke;
+border-radius: 20px;
+border:none;
+font-weight:600;
+font-size: 0.8em;
+padding: 10px;
+width: 110%;
+max-width: 400px;
+margin:8px auto;
+}
+
+.section-four p{
+    color:blue;
+    padding: 12px;
+    text-align: center;}
+
+.section-four a{text-decoration: none;
+font-size: large;
+font-weight: 600;}
+
+.section-five{
+    margin:0 20px;
+}
+
+.section-five h1{text-align: center;}
+
+.section-five-items{
+    position: relative;
+}
+
+.section-five-items p{
+    padding: 10px;
+    font-size: large;}
+
+.section-five-items img{
+    position: absolute;
+    right: 0;
+}
+.section-six{
+    background-image: linear-gradient(to left, rgb(8, 42, 56), rgb(49, 159, 163), rgb(68, 109, 184));
+    padding: 12px;
+}
+
+.section-six h1{
+    text-align: center;
+    color: white;
+    padding: 10px;}
+
+.section-six button{
+    margin: 28px auto;
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+    color: white;
+    background-color: rgb(12, 78, 109);
+    display: block;
+    width:100%;
+    max-width: 20%;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.section-seven{
+    display: grid;
+    grid-template-columns: repeat(5, 200px);
+    grid-template-rows: repeat(2, 150px);
+    margin:10px auto;
+    justify-content: center;
+}
+
+.section-seven img{
+    width:100%;
+    max-width: 18px;    
+    height: auto;
+    margin-top: 15px;
+    margin-inline:5px ;
+    }
+
+.section-seven div:nth-child(1){
+    grid-column:1/1 ;
+    grid-row: 1/2;
+    font-weight:600;
+}
+
+.section-seven div:nth-child(6){
+    grid-column: 2/2;
+    grid-row: auto;}
+
+@media screen and (min-width:300px) and (max-width:800px){
+
+    .header-nav{
+        display: none;
+    }
+
+    .section-one{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        margin:10px 75px;
+        width: 750px;
+    }
+
+    .section-one img{
+        display: none;
+    }
+
+    .section-two-div{
+        width:895px;
+    }
+
+    .section-two-div2{
+        display: grid;
+        grid-template-columns: 295px 200px 200px;
+        grid-template-rows:120px;
+        margin-top: 15px;
+        width: 795px;
+    }
+
+    .section-three-header{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-content: center;
+        padding: 20px;
+        margin: 10px 70px;
+        width:750px;
+    }
+
+    .section-three-container{
+        width: 850px;
+        margin:10px 70px;}
+    
+    .section-three-container div:nth-child(1){
+        width: 250px;
+    }
+    
+    .section-three-container div:nth-child(2){
+        top: -25px;
+        width: 275px;
+        height: 470px;
+        }
+    
+    .section-three-container div:nth-child(3){
+        width: 240px;
+    }
+
+    .section-three-button{
+        margin:20px 230px;
+        width: 500px;
+    }
+
+    .section-four{
+        width: 890px;
+        padding: 20px;
+    }
+
+    .section-four form{
+        margin:20px auto;
+        width:550px;
+    }
+
+    .section-five {
+        width: 890px;
+        margin: 20px;
+    }
+
+    .section-six {
+        width: 890px;
+        margin: 20px;
+    }
+
+    .section-seven{
+        display: grid;
+        grid-template-columns: repeat(5, 150px);
+        width:750px;
+    }
+}
+
+@media screen and (min-width:801px) and (max-width:1169px){
+
+    .header-nav{
+        width:1200px;
+    }
+
+    .section-one{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        margin:20px 250px;
+        width: 750px;
+    }
+
+    .section-one img{
+        margin:10px 150px;
+        width: 750px;
+    }
+
+    .section-two-div{
+        width:1200px;
+    }
+
+    .section-three-container{
+        width: 1000px;
+        margin:50px 70px;
+    }
+
+    .section-three-header{
+        margin: 20px 160px;
+        width:900px;
+     }
+
+     .section-three-header h1{
+        text-align: center;
+        margin-right: 20px;
+     }
+
+    .section-three-header p{
+        margin: 10px 200px;
+        font-size: 20px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .section-three-button{
+        margin: 20px 160px;
+        width:900px;
+    }
+
+    .section-four {
+        width: 1200px;
+        margin-top: 20px;
+    }
+
+    .section-five {
+        width: 1200px;
+        margin-top: 20px;
+    }
+
+    .section-six {
+        width: 1200px;
+        margin-top: 20px;
+    }
+
+    .section-seven{
+        width:1200px;
+    }
+}

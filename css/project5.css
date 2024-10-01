@@ -1,0 +1,336 @@
+/*RESET*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/*VARIABLES*/
+
+/*GENERAL STYLES*/
+header{
+    border:none;
+    padding: 20px;
+}
+
+nav{
+    display: flex;
+    justify-content: end;
+}
+
+a{
+    color: black;
+    display: flex;
+    text-decoration: none;
+    margin-inline: 20px;
+    font-weight: 700;
+}
+
+a:nth-child(6){
+    border: 0.8px solid rgb(36, 36, 36);
+    border-radius: 5px;
+    padding: 2px 15px;
+}
+.container{
+    display: flex;
+    margin: 50px;
+    box-shadow:2px 2px 2px gray;
+}
+
+.section-one{
+    width: 100%;
+    max-width:55%;
+    padding: 20px;
+}
+
+.section-one h1{
+    margin-block-end: 35px;
+    text-shadow: 1px 0.9px gray;
+}
+
+.section-one form{
+    display: flex;
+    flex-direction: column;
+}
+
+.section-one .form-item{
+    display: flex;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.flex-two{
+    padding:10px;
+    margin-top: 5px;
+}
+
+.section-one label{
+    margin:5px;
+    padding: 5px;
+    font-weight: 700;}
+
+.section-one input{
+    background-color: rgb(245, 245, 245);
+    border: 0.5px solid rgb(169, 169, 207);
+    border-radius: 10px;
+    margin: 5px;
+    padding: 9px 10px;
+}
+
+.btn{
+    background-color: rgb(47, 129, 95);
+    color: white;
+    border: none;
+    margin:20px;
+    padding: 10px 200px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn1{
+    background-color: gray;
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    padding: 3px 10px;
+    margin: 30px 200px;
+}
+
+.btn1-span{
+    font-size: 18px;
+}
+
+span{
+    font-size: large;
+    font-weight: 600;
+}
+
+.paragraph{
+    font-size: large;
+    font-weight: 600;
+    margin: 20px;
+}
+
+.paragraph::before{
+    content:'1' ;
+    border: 0.8px solid rgb(45, 45, 247);
+    border-radius: 100%;
+    padding: 3px;
+    margin-right:6px;
+}
+
+.paragraph-two::before{
+    content:'2' ;
+    border: 0.8px solid rgb(45, 45, 247);
+    border-radius: 100%;
+    padding: 3px;
+    margin-right:6px;
+}
+
+.paragraph-two{
+    font-weight:650;
+    font-size: large;
+    margin-left: 10px;
+}
+
+[placeholder]{
+    padding: 7px;
+}
+
+.section-one-a{
+    color:gray;
+    font-weight: 700;
+    text-decoration: underline;
+    margin-inline: 0;
+    border:0.1px;
+}
+
+.section-one-a:hover{
+    color: rgb(36, 37, 37);
+}
+
+.section-one-p{
+    margin-left: 90px;
+    display: inline-flex;
+    gap: 2px;
+}
+
+.section-two{
+    background-image: linear-gradient(to bottom,rgb(26, 26, 148),  rgb(15, 85, 112));
+    color:white;
+    padding: 20px;
+    padding: 50px;
+    font-family: 'Gill Sans','Trebuchet MS', sans-serif;
+}
+
+.section-two-p{
+    font-size: 28px;
+    font-family: 'Segoe UI';
+    margin: 20px;
+}
+
+.section-two p{
+    margin:15px;
+}
+
+.section-two a{
+    color:whitesmoke;
+    margin: 20px;
+    padding: 20px;
+    text-decoration: underline;
+    margin-inline: 0;
+    border: none;
+}
+
+.section-two a:hover{
+    color: rgb(55, 129, 226);
+}
+.section-two li{
+    padding: 10px;
+    margin: 10px;
+    list-style:none;
+}
+
+.section-two img{
+    background-color: white;
+}
+
+.section-two hr{
+    margin-block-start: 10px;
+}
+
+figure img{
+    width:50px;
+    height: auto;
+    border-radius:100%;
+    margin-block-start:10px;
+    display: block;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    font-weight:700; ;
+}
+
+@media screen and (min-width: 300px) and (max-width: 600px){
+        
+        header {
+            width: fit-content;
+            padding: 10px;
+    }
+
+        nav {
+            margin: 0 auto;
+    }
+        a{
+            display: flex;
+            font-size: 14px;
+        }
+
+        .container {
+            box-shadow: none;
+            margin: 10px;
+        }
+    
+        .section-one {
+            max-width: 100%;
+            padding: 10px;
+        }
+    
+        .section-one h1 {
+            font-size: 22px;
+            margin-block-end: 20px;
+        }
+    
+        .section-one label {
+            font-size: 14px;
+            padding: 3px;
+        }
+    
+        .section-one input {
+            font-size: 14px;
+            padding: 7px;
+        }
+    
+        .form-item input{
+            padding:5px 2px;
+            width:100px;
+        }
+
+        .flex-two{
+            margin-top: 35px;
+        }
+        .btn {
+            padding: 8px 70px;
+            font-weight:600;
+            font-size:12px;
+            margin: 10px 0;
+        }
+    
+        .btn1 {
+            margin: 10px 70px;
+            padding: 5px 15px;
+            font-size: 10px;
+        }
+    
+        .btn1-span{
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        .section-one-p{
+            margin: 0;
+            font-size: 14px;
+            display:block;
+        }
+
+        .section-one-p span{
+            font-size: 12px;}
+
+        .section-one-p img{
+            width: 15px;
+            height: 15px;
+        }
+
+        .section-one-a{
+            margin: 0;
+        }
+    
+        .section-two {
+            padding:10px;
+            font-size: 14px;
+        }
+        
+        footer {
+            font-size: 12px;
+        }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1199px){
+    
+    .form-item input{
+        padding:5px 2px;
+        width:100px;
+    }
+
+    .btn {
+        padding: 7px 68px;
+        margin: 10px auto;
+    }
+
+    .section-one-p{
+        margin: 0;
+        font-size: 17px;
+        display: block;
+    }
+
+    .btn1 {
+        margin: 10px auto;
+        padding: 7px 68px;
+    }
+}
