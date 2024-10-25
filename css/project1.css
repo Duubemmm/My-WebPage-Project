@@ -46,7 +46,8 @@
 
 .content{
     background-color: white;
-    width: 55%;
+    width: 62%;
     border-radius: 5px;
     padding:55px 20px;
+    font-size:18px;
 }
