@@ -12,13 +12,13 @@
             <h1>My WebPage Project 🧑🏾‍💻</h1>
 
             <ul class="sidebar">
-                <li onclick="hideSideBar()"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
-                <li><a href="project1.html">An Otter Essay</a></li><br>
-                <li><a href="project2.html">Huckleberry AdCopy</a></li><br><br>
-                <li><a href="project3.html">An AdCopy</a></li><br>
-                <li><a href="project4.html">SignUp Page</a></li><br>
-                <li><a href="project5.html">WP Pusher Checkout Page</a></li><br><br>
-                <li><a href="project6.html">Scissor Landing Page</a></li><br>
+                <li onclick="toggleSideBar()"><svg aria-label="close sidebar" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
+                <li><a href="project1.html">An Otter Essay</a></li>
+                <li><a href="project2.html">Huckleberry AdCopy</a></li>
+                <li><a href="project3.html">An AdCopy</a></li>
+                <li><a href="project4.html">SignUp Page</a></li>
+                <li><a href="project5.html">WP Pusher Checkout Page</a></li>
+                <li><a href="project6.html">Scissor Landing Page</a></li>
             </ul>
 
             <ul>
@@ -28,7 +28,7 @@
                 <li class="hideOnMobile"><a href="project4.html">SignUp Page</a></li>
                 <li class="hideOnMobile"><a href="project5.html">WP Pusher Checkout Page</a></li>
                 <li class="hideOnMobile"><a href="project6.html">Scissor Landing Page</a></li>
-                <li class="menu-button" onclick="showSideBar()"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></li>
+                <li class="menu-button" onclick="toggleSideBar()"><svg aria-label="show sidebar" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></li>
             </ul>
         </nav>
     </header>
@@ -49,16 +49,10 @@
     </main>
 
     <script>
-        function showSideBar(){
-            const sideBar = document.querySelector('.sidebar')
-            sideBar.style.display = 'flex';
-        }
-
-        function hideSideBar(){
-            const sideBar = document.querySelector('.sidebar')
-            sideBar.style.display = 'none';
-
-        }
+        function toggleSideBar() {
+        const sideBar = document.querySelector('.sidebar');
+        sideBar.style.display = (sideBar.style.display === 'flex') ? 'none' : 'flex';
+}
     </script>
 </body>
 </html>

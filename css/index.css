@@ -8,7 +8,7 @@
 
 body{
     background-image: linear-gradient(rgb(44, 13, 32), rgb(54, 29, 48));
-    font-family: 'Hanken Grotesk' sans-serif;
+    font-family: 'Hanken Grotesk', sans-serif;
     height: 100vh;
 }
 
@@ -19,7 +19,7 @@ header{
 nav{
     background-color: rgba(231, 213, 232, 0.76);
     padding: 0.3rem;
-    width:120%;
+    width:100%;
     position:relative;
     z-index:1;
 }
@@ -71,7 +71,7 @@ nav a:hover{
 }
 
 .sidebar li{
-    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .sidebar a{
