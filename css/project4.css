@@ -7,12 +7,12 @@
 
 /* VARIABLES*/
 :root{
-    --BTN-BG-COLOR: rgb(46, 133, 96);
+    --BTN-BG-COLOR: rgba(46, 196, 182, 1);
     --A-COLOR: rgb(72, 152, 158);
     --INPUT-COLOR:rgb(247, 243, 243);
-    --CNTR-BG-COLOR:rgb(214, 236, 214);
-    --FORM-BG-COLOR:rgb(245,245,245);
-    --INPUT-HOVER-COLOR:rgb(48, 180, 57);
+    --CNTR-BG-COLOR:rgba(228, 252, 248, 0.932);
+    --FORM-BG-COLOR:rgba(255,255,255,1);
+    --INPUT-HOVER-COLOR:rgba(46, 196, 182,1);
     --BTN-HOVER-COLOR:rgb(209, 235, 211);
     --A-HOVER-COLOR:rgb(38, 207, 117);
   }
@@ -36,12 +36,19 @@ img{
 .logo-container h1{
   font-family: 'Trebuchet MS';
   margin-top: 1.5rem;
+  color: rgba(0, 11, 10, 1);
+
 }
 
 .logo-container p{
-  font-size: large;
+  font-family: 'Trebuchet MS';
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 25px;
   margin-top: 1.5rem;
   text-align: justify;
+  color: rgba(115, 115, 115, 0.5);
+
 }
 
 .form-container{
@@ -114,15 +121,18 @@ input:hover{
 }
 
 button{
-  background-color:var(--BTN-BG-COLOR) ;
+  background-color:var(--BTN-BG-COLOR);
   border: none;
   border-radius: 3px;
-  color: whitesmoke;
+  color:rgba(255, 255, 255, 1);
   margin:10px 20px;
-  padding:5px;
-  font-weight: 700;
-  font-size: 20px;
+  padding:10px;
+  font-weight: 600;
+  font-size: 16px;
   width:90%;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.2px;
 }
 
   button:hover{
@@ -142,16 +152,14 @@ a{
 a:hover{
   color:var(--A-HOVER-COLOR);}
 
-@media screen and (max-width:800px){
+.hidden{display:none;}
 
-  body{
-    background-color: rgb(214, 236, 214);
-  }
+@media screen and (max-width:800px){
 
   .container{
     display:flex;
     flex-direction: column;
-    background-color: rgb(214, 236, 214);
+    width: 29rem;
 }
 
 .logo-container{
@@ -159,8 +167,8 @@ a:hover{
     padding:0 7px;
   }
 
-.form-container{margin:10px 0;
-width: fit-content;
+.form-container{margin:3rem auto;
+width: 25rem;
 box-shadow: none;
 }
 
@@ -169,13 +177,20 @@ box-shadow: none;
 flex-direction: column;
 }
 
-button{
-  width:fit-content;}
 
 button:hover{
   background-color: var(--BTN-HOVER-COLOR);
   color:black;
 }
+
+
+.form-container p{display: none;}
+
+.hidden{display:block;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px;}
+
 
 input:hover,
 input:active,
