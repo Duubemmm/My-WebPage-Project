@@ -60,7 +60,7 @@ nav a:hover{
     top:0;
     right: 0;
     height:120vh;
-    width:250px;
+    width:100%;
     position:absolute;
     z-index: 1;
     background-color:rgba(231, 213, 231, 0.685);
@@ -83,8 +83,8 @@ nav a:hover{
     width: 15rem;
     height: 10rem;
     margin: 8rem auto;
-    border: 2px solid rgb(184, 111, 178);
-    border-radius: 10px;
+    border: 2px solid plum;
+    border-radius: 9.9px;
 }
   
   .flip-card-inner {
